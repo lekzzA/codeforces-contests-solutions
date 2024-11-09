@@ -3,14 +3,14 @@ name: C++ Tests
 on:
   push:
     paths:
-      - 'src/*.cpp'
-      - 'tests/*_test_cases.txt'
-      - 'tests/*_expected_output.txt'
+      - 'src/*/*.cpp'
+      - 'tests/*/*_test_cases.txt'
+      - 'tests/*/*_expected_output.txt'
   pull_request:
     paths:
-      - 'src/*.cpp'
-      - 'tests/*_test_cases.txt'
-      - 'tests/*_expected_output.txt'
+      - 'src/*/*.cpp'
+      - 'tests/*/*_test_cases.txt'
+      - 'tests/*/*_expected_output.txt'
 
 jobs:
   test:
