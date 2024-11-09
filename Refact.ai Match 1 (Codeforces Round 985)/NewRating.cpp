@@ -40,6 +40,7 @@ int main() {
         nums.clear();
         input(n1, nums);
         answer = find_new_rating(n1, nums);
+        answer = answer < 0 ? 0 : answer;
         cout << answer << endl;
     }
 }
