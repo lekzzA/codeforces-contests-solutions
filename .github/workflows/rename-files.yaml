@@ -1,0 +1,27 @@
+name: Rename Files
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  rename-files:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Rename files with trailing $
+        run: |
+          find . -type f -name '*$' -exec bash -c 'mv "$0" "${0%$}"' {} \;
+
+      - name: Commit renamed files
+        run: |
+          git config --global user.name "Tanuj Bhatt"
+          git config --global user.email "bhatttanuj3@gmail.com"
+          git add .
+          git commit -m "Renamed files to remove trailing $"
+          git push
