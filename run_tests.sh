@@ -2,6 +2,8 @@
 
 # Loop through each C++ file in the src directory within contest folders
 for file in src/*/*.cpp; do
+  pwd
+  ls -lart
   ls "tests/Round985/NewRating_test_cases.txt"
   ls "tests/Round985/NewRating_expected_output.txt"
   ls -lart "tests/Round985/"
