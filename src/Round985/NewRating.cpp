@@ -22,6 +22,7 @@ int find_new_rating(int n1, vector<int> nums) {
     // i0 -> Current contest is before the skipped ones.
     // i1 -> Current contest is in the skipped ones.
     // i2 -> Current contest is after the skipped ones.
+    // Empty
     for (int j = 1; j < n1; j++) {
         
         i2 = max(f(i1, nums[j]), f(i2, nums[j]));
