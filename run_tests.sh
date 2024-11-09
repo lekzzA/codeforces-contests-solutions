@@ -2,6 +2,10 @@
 
 # Loop through each C++ file in the src directory within contest folders
 for file in src/*/*.cpp; do
+  ls -l "tests/Refact.ai Match 1 (Codeforces Round 985)/"
+  ls -l "tests/Refact.ai Match 1 (Codeforces Round 985)/" | cat -A
+  ls "tests/Refact.ai Match 1 (Codeforces Round 985)/NewRating_test_cases.txt"
+  ls "tests/Refact.ai Match 1 (Codeforces Round 985)/NewRating_expected_output.txt"
   # Get the contest and solution names, e.g., "contest1/solution1"
   contest_name=$(basename "$(dirname "$file")")
   solution_name=$(basename "$file" .cpp)
