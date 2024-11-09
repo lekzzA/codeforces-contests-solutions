@@ -1,5 +1,8 @@
 #!/bin/bash
 
+for file in "tests/Refact.ai Match 1 (Codeforces Round 985)"/*; do
+  mv "$file" "$(echo "$file" | tr -d '[:space:]')"
+done
 # Loop through each C++ file in the src directory within contest folders
 for file in src/*/*.cpp; do
   ls -l "tests/Refact.ai Match 1 (Codeforces Round 985)/"
