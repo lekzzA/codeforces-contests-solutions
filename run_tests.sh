@@ -4,9 +4,6 @@
 for file in src/*/*.cpp; do
   pwd
   ls -lart
-  ls "tests/Round985/NewRating_test_cases.txt"
-  ls "tests/Round985/NewRating_expected_output.txt"
-  ls -lart "tests/Round985/"
   # Get the contest and solution names, e.g., "contest1/solution1"
   contest_name=$(basename "$(dirname "$file")")
   solution_name=$(basename "$file" .cpp)
