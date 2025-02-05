@@ -1,9 +1,23 @@
-# codeforces-contests-solutions
-Here, I try to post the solutions to codeforces contests.
-This is updated after the contest.
-For the questions I'm unable to solve in the contest, I try to do them after the contest and upload here. Otherwise, I look for references and hints and try to come up with a solution.
-In near future, if I get time, will try to add hints and approaches as well.
-I majorly use C++ and Python to solve the questions. If you want any specific solution in other language, please do let me know. Or feel free to update here in the contest folder with some other language/ some better approach or solution.
-Please consider adding basic test cases also from the contest itself, since for CPP files there is a workflow which tests the code.
-Test cases should be added in the file <Solution_File_Name>_test_cases.txt and expected outputs to be added in <Solution_File_Name>_expected_output.txt
-Where, Solution_File_Name.cpp is the file name of your solution
+# Codeforces Contest Solutions
+
+## What
+This repository is created to contain solutions of the codeforces contest (of any level).
+
+This is, obviously :) ,  updated after the contest.
+
+### Possible enhancements
+It can be tried to add hints and approaches as well.
+
+### Contribution
+This can be used to increase your number of contributions in the open source with some good-first-issues.
+Please feel free to add any solution of any contest. Just create the correct hierarchy, and copy-paste one test case from the contest itself.
+Adding test is only limited to C++ files for now, as there is an action created which automatically runs the solutions with the test cases.
+
+### Step by Step guide on How to add a solution -
+* Move to src directory.
+* Create a directory named with the contest ID. Ex: Round984
+* Inside that directory, add individual solutions with file name set to question name.
+* For C++ only, add tests also -
+* Move to test directory, create a directory named same as that of created in src. Ex: Round984
+* Add 2 files - QuestionName_test_cases.txt and QuestionNmae_expected_output.txt [You can pick this from the contest itself]
+  
